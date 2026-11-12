@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>"exam"</title>
+<script languag="javascript">
+function exam(form)
+{
+var i=0
+if(form.one[0].checked)i=i+1
+if(form.three[0].checked)i=i+1
+if(form.four[0].checked)i=i+1
+if(form.five[1].checked)i=i+1
+window.alert("your score is:"+i);
+}
+</script>
+</head>
+<body>
+<form onSubmit="exam(this)">
+<p>
+<h2>welcome to my online exam registration</h2>
+<h1> which is the paltform independent</h1>
+<input type="radio" name="one" value="c++">
+<label>c++</label>
+<input type="radio" name="one" value="c">
+<label>c</label>
+<input type="radio" name="one" value="java">
+<label>java</label>
+<input type="radio" name="one" value="python">
+<label>python</label>
+</p>
+<p>
+<h1> which is class of all class in java</h1>
+<input type="radio" name="three" value="object">
+<label>object</label>
+<input type="radio" name="three" value="main">
+<label>main</label>
+<input type="radio" name="three" value="system">
+<label>system</label>
+<input type="radio" name="three" value="graphic">
+<label>graphic</label>
+</p>
+<p>
+<h1> frame package in which package</h1>
+<input type="radio" name="four" value="awt">
+<label>awt</label>
+<input type="radio" name="four" value="apple">
+<label>apple</label>
+<input type="radio" name="four" value="long">
+<label>long</label>
+<input type="radio" name="four" value="string">
+<label>string</label>
+</p>
+<p>
+<h1> java does not support </h1>
+<input type="radio" name="five" value="inheritance">
+<label>inhertance</label>
+<input type="radio" name="five" value="multiple inheritance">
+<label>multiple inheritance</label>
+<input type="radio" name="five" value="polymorphism">
+<label>polymorphism</label>
+<input type="radio" name="five" value="encryption">
+<label>encryption</label>
+</p>
+<input type="submit" name="submit"/>
+<input type="reset" name="reset"/>
+</body>
+</form>
+</html>
